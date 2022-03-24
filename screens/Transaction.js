@@ -23,7 +23,7 @@ export default class TransactionScreen extends Component {
     })
   }
 
-  handleBarCodeScanned=async(type,data)=>{
+  handleBarCodeScanned=async({type,data})=>{
     this.setState({
       scannedData: data,
       domState: "normal",
